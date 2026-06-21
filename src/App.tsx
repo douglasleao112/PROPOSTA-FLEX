@@ -475,11 +475,19 @@ export default function App() {
         </>
       )}
 
-      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
-        activeCategory === 'all' ? 'text-[#170d66]' : 'text-slate-700'
-      }`}>
-        Plano Completo
-      </span>
+<span className="flex flex-col items-center justify-center leading-tight">
+  <strong className={`font-display font-black uppercase text-[11px] sm:text-sm tracking-wide ${
+    activeCategory === 'all' ? 'text-[#170d66]' : 'text-slate-700'
+  }`}>
+    Plano Completo
+  </strong>
+
+  <small className={`font-mono font-bold uppercase text-[9px] sm:text-[10px] tracking-wider mt-1 ${
+    activeCategory === 'all' ? 'text-[#ed3024]' : 'text-slate-500'
+  }`}>
+    12 módulos
+  </small>
+</span>
     </button>
 
     {/* Botão 2 - Técnico */}
@@ -501,11 +509,19 @@ export default function App() {
         </>
       )}
 
-      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
-        activeCategory === 'trilha1' ? 'text-[#170d66]' : 'text-slate-700'
-      }`}>
-        Técnico<br className="hidden sm:block" /> 6 módulos
-      </span>
+<span className="flex flex-col items-center justify-center leading-tight">
+  <strong className={`font-display font-black uppercase text-[11px] sm:text-sm tracking-wide ${
+    activeCategory === 'trilha1' ? 'text-[#170d66]' : 'text-slate-700'
+  }`}>
+    Módulo Técnico
+  </strong>
+
+  <small className={`font-mono font-bold uppercase text-[9px] sm:text-[10px] tracking-wider mt-1 ${
+    activeCategory === 'trilha1' ? 'text-[#170d66]' : 'text-slate-500'
+  }`}>
+    6 módulos
+  </small>
+</span>
     </button>
 
     {/* Botão 3 - Retenção */}
@@ -527,11 +543,19 @@ export default function App() {
         </>
       )}
 
-      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
-        activeCategory === 'trilha2' ? 'text-[#ed3024]' : 'text-slate-700'
-      }`}>
-        Retenção<br className="hidden sm:block" /> 6 módulos
-      </span>
+<span className="flex flex-col items-center justify-center leading-tight">
+  <strong className={`font-display font-black uppercase text-[11px] sm:text-sm tracking-wide ${
+    activeCategory === 'trilha2' ? 'text-[#ed3024]' : 'text-slate-700'
+  }`}>
+    Módulo de Retenção
+  </strong>
+
+  <small className={`font-mono font-bold uppercase text-[9px] sm:text-[10px] tracking-wider mt-1 ${
+    activeCategory === 'trilha2' ? 'text-[#ed3024]' : 'text-slate-500'
+  }`}>
+    6 módulos
+  </small>
+</span>
     </button>
 
   </div>
