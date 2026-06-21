@@ -445,23 +445,33 @@ export default function App() {
             </p>
           </div>
 
-          {/* Filters & Dynamic Category Tabs */}
+          
+          
+
+
+
+
+
+{/* Filters & Dynamic Category Tabs */}
 <div className="mb-14">
   <div className="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-4xl mx-auto">
 
-    {/* Botão 1 */}
+    {/* Botão 1 - Plano Completo */}
     <button
       onClick={() => setActiveCategory('all')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'all'
-          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
-          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+          ? 'bg-white shadow-xl shadow-indigo-950/15 scale-[1.02]'
+          : 'bg-white shadow-sm hover:shadow-md'
       }`}
     >
       {activeCategory === 'all' && (
         <>
-          <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+          {/* Faixa metade azul e metade vermelha */}
+          <span className="absolute top-0 left-0 w-full h-2 rounded-t-2xl bg-[linear-gradient(to_right,#170d66_0%,#170d66_50%,#ed3024_50%,#ed3024_100%)]" />
+
+          {/* Triângulo branco */}
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
         </>
       )}
 
@@ -472,19 +482,22 @@ export default function App() {
       </span>
     </button>
 
-    {/* Botão 2 */}
+    {/* Botão 2 - Técnico */}
     <button
       onClick={() => setActiveCategory('trilha1')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'trilha1'
-          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
-          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+          ? 'bg-white shadow-xl shadow-indigo-950/15 scale-[1.02]'
+          : 'bg-white shadow-sm hover:shadow-md'
       }`}
     >
       {activeCategory === 'trilha1' && (
         <>
+          {/* Faixa azul */}
           <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+
+          {/* Triângulo branco */}
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
         </>
       )}
 
@@ -495,24 +508,27 @@ export default function App() {
       </span>
     </button>
 
-    {/* Botão 3 */}
+    {/* Botão 3 - Retenção */}
     <button
       onClick={() => setActiveCategory('trilha2')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'trilha2'
-          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
-          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+          ? 'bg-white shadow-xl shadow-red-950/10 scale-[1.02]'
+          : 'bg-white shadow-sm hover:shadow-md'
       }`}
     >
       {activeCategory === 'trilha2' && (
         <>
-          <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+          {/* Faixa vermelha */}
+          <span className="absolute top-0 left-0 w-full h-2 bg-[#ed3024] rounded-t-2xl" />
+
+          {/* Triângulo branco */}
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
         </>
       )}
 
       <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
-        activeCategory === 'trilha2' ? 'text-[#170d66]' : 'text-slate-700'
+        activeCategory === 'trilha2' ? 'text-[#ed3024]' : 'text-slate-700'
       }`}>
         Retenção<br className="hidden sm:block" /> 6 módulos
       </span>
@@ -520,6 +536,12 @@ export default function App() {
 
   </div>
 </div>
+
+
+
+
+
+
 
 
 
