@@ -1,0 +1,6 @@
+{
+  "name": "Plano de Ensino Flex Fitness 2026",
+  "description": "Proposta de formação técnica e comportamental para o time operacional da Flex Fitness",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

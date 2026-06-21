@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-flex-blue: #170d66;
+  --color-flex-red: #ed3024;
+  --color-flex-dark-bg: #0b053d;
+  --color-flex-deep: #08032c;
+  
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-float-1: float1 7s ease-in-out infinite;
+  --animate-float-2: float2 9s ease-in-out infinite;
+  --animate-float-3: float3 8s ease-in-out infinite;
+  --animate-shine: shine 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+
+  @keyframes shine {
+    0% { transform: translateX(-150%) skewX(-30deg); }
+    25% { transform: translateX(180%) skewX(-30deg); }
+    100% { transform: translateX(180%) skewX(-30deg); }
+  }
+
+  @keyframes float1 {
+    0%, 100% { transform: translateY(0px) scale(1) rotate(-3deg); }
+    50% { transform: translateY(-5px) scale(0.95) rotate(3deg); }
+  }
+  @keyframes float2 {
+    0%, 100% { transform: translateY(0px) scale(1) rotate(4deg); }
+    50% { transform: translateY(-7px) scale(0.94) rotate(-3deg); }
+  }
+  @keyframes float3 {
+    0%, 100% { transform: translateY(0px) scale(1) rotate(2deg); }
+    50% { transform: translateY(-4px) scale(0.96) rotate(6deg); }
+  }
+}
+
+/* Custom styles for scrollbars and text highlight */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-flex-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #251e60;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-flex-red);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+.bg-grid-pattern-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
+}
+
+.gradient-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(237, 48, 36, 0.15) 0%, rgba(23, 13, 102, 0.4) 50%, transparent 100%);
+}
+
+.filter-flex-blue {
+  filter: brightness(0) saturate(100%) invert(11%) sepia(51%) saturate(5185%) hue-rotate(241deg) brightness(80%) contrast(104%);
+}
+
