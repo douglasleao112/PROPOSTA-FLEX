@@ -600,9 +600,7 @@ export default function App() {
             <h2 className="font-display font-bold text-3xl md:text-4xl text-white mt-1 mb-3">
               Como a formação será conduzida
             </h2>
-            <p className="text-gray-350 text-sm md:text-base leading-relaxed">
-              Uma abordagem sistêmica que interliga prática real com fundamentação empática e foco operacional direto.
-            </p>
+          
           </div>
 
           {/* Steps wrapper with relative line */}
