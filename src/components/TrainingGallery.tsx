@@ -142,13 +142,13 @@ export default function TrainingGallery() {
           </AnimatePresence>
         </div>
 
-        {/* Top Active Progress Bar */}
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-white/15 z-30 overflow-hidden">
-          <div 
-            className="h-full bg-[#ed3024] transition-all duration-75 ease-linear shadow-[0_0_8px_#ed3024]"
-            style={{ width: `${progress}%` }}
-          />
-        </div>
+{/* Bottom Active Progress Bar */}
+<div className="absolute bottom-0 left-0 right-0 h-1.5 bg-white/15 z-30 overflow-hidden">
+  <div 
+    className="h-full bg-[#ed3024] transition-all duration-75 ease-linear shadow-[0_0_8px_#ed3024]"
+    style={{ width: `${progress}%` }}
+  />
+</div>
 
         {/* Premium Shadow Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/30 to-transparent z-10 pointer-events-none" />
@@ -201,7 +201,7 @@ export default function TrainingGallery() {
           </div>
 
           {/* Bottom segment: Text Details over a nice deep dark gradient on the bottom */}
-          <div className="w-full bg-gradient-to-t from-black/65 via-black/35 to-transparent pt-12 pb-5 px-6 md:px-8 text-left pointer-events-auto">
+          <div className="w-full bg-gradient-to-t from-black/40 via-black/15 to-transparent pt-12 pb-5 px-6 md:px-8 text-left pointer-events-auto">
             <div className="max-w-xl">
               <h3 className="font-display font-bold text-white text-base md:text-xl tracking-tight leading-snug">
                 {activeImage.title}
