@@ -78,6 +78,10 @@ export default function App() {
     return matchesCategory && matchesSearch;
   });
 
+  useEffect(() => {
+  setExpandedModuleId(filteredModules[0]?.id ?? null);
+}, [activeCategory, searchQuery]);
+
   // Direct actions trigger scroll
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
@@ -560,11 +564,6 @@ export default function App() {
 
   </div>
 </div>
-
-
-
-
-
 
 
 
