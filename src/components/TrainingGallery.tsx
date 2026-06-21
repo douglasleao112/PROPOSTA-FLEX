@@ -183,21 +183,21 @@ export default function TrainingGallery() {
 
           {/* Middle segment: Floating directional arrows (Seta manual com backdrop blur) */}
           <div className="flex justify-between items-center w-full pointer-events-auto px-4 sm:px-6 translate-y-8">
-            <button
-              onClick={handlePrev}
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-950/70 backdrop-blur-sm border border-white/10 text-white flex items-center justify-center hover:bg-[#ed3024] hover:border-transparent hover:scale-105 active:scale-95 transition-all shadow-xl"
-              aria-label="Carrossel Anterior"
-            >
-              <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-            </button>
+          <button
+  onClick={handlePrev}
+  className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-950/70 backdrop-blur-sm border border-white/10 text-white flex items-center justify-center hover:bg-[#ed3024] hover:border-transparent hover:scale-105 active:scale-95 transition-all shadow-xl"
+  aria-label="Carrossel Anterior"
+>
+  <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+</button>
 
-            <button
-              onClick={handleNext}
-              className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-950/70 backdrop-blur-sm border border-white/10 text-white flex items-center justify-center hover:bg-[#ed3024] hover:border-transparent hover:scale-105 active:scale-95 transition-all shadow-xl"
-              aria-label="Carrossel Próximo"
-            >
-              <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-            </button>
+         <button
+  onClick={handleNext}
+  className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-950/70 backdrop-blur-sm border border-white/10 text-white flex items-center justify-center hover:bg-[#ed3024] hover:border-transparent hover:scale-105 active:scale-95 transition-all shadow-xl"
+  aria-label="Carrossel Próximo"
+>
+  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+</button>
           </div>
 
           {/* Bottom segment: Text Details over a nice deep dark gradient on the bottom */}
