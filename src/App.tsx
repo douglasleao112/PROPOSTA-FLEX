@@ -31,7 +31,9 @@ export default function App() {
   const [activeCategory, setActiveCategory] = useState<'all' | 'trilha1' | 'trilha2'>('all');
   const [searchQuery, setSearchQuery] = useState('');
   const [scrollProgress, setScrollProgress] = useState(0);
-  const [expandedModuleId, setExpandedModuleId] = useState<number | null>(null);
+  const [expandedModuleId, setExpandedModuleId] = useState<number | null>(
+  TRAINING_MODULES[0]?.id ?? null
+);
   const [grayscaleAmount, setGrayscaleAmount] = useState(1);
   const [opacityAmount, setOpacityAmount] = useState(0.65);
 
@@ -492,8 +494,8 @@ export default function App() {
                 index={idx} 
                 isExpanded={expandedModuleId === module.id}
                 onToggle={() => {
-                  setExpandedModuleId(prev => prev === module.id ? null : module.id);
-                }}
+  setExpandedModuleId(module.id);
+}}
               />
             ))}
           </div>
