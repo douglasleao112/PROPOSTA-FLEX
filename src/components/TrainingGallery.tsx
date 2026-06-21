@@ -123,7 +123,7 @@ export default function TrainingGallery() {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* 1. CAROUSEL MAIN CONTAINER - Executive rounded-[32px] with premium borders */}
-      <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[21/9] rounded-[32px] overflow-hidden border border-white/10 bg-slate-950 shadow-2xl shadow-black/80 group">
+      <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[21/9] rounded-[20px] overflow-hidden border border-white/10 bg-slate-950 shadow-2xl shadow-black/80 group">
         
         {/* Dynamic backdrop blur for filling space premium feel */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden sm:block">
@@ -168,8 +168,8 @@ export default function TrainingGallery() {
               <img
                 src={activeImage.url}
                 alt={activeImage.title}
-                className="w-full h-full object-cover sm:object-contain relative pointer-events-none select-none max-h-full"
-                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover relative pointer-events-none select-none max-h-full"
+                 referrerPolicy="no-referrer"
               />
             </motion.div>
           </AnimatePresence>
