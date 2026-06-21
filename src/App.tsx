@@ -559,11 +559,14 @@ export default function App() {
       <section className="py-24 bg-white text-slate-950 bg-grid-pattern-dark relative border-y border-slate-200 flex flex-col justify-center items-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8 relative z-10">
           <img 
-            src="https://i.ibb.co/Fbv9kqmn/flex-para-fundo-claro.png" 
-            alt="Flex Fitness" 
-            referrerPolicy="no-referrer"
-            className="h-14 sm:h-16 object-contain mx-auto select-none filter-flex-blue"
-          />
+  src="https://i.ibb.co/S8XddB6/flex-para-fundo-escuro.png" 
+  alt="Flex Fitness" 
+  referrerPolicy="no-referrer"
+  className="h-14 sm:h-16 object-contain mx-auto select-none"
+  style={{
+    filter: "brightness(0) saturate(100%) invert(9%) sepia(85%) saturate(3300%) hue-rotate(240deg) brightness(75%) contrast(110%)"
+  }}
+/>
           
           <h2 className="font-display font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#170d66] leading-tight uppercase tracking-tight max-w-3xl mx-auto">
             Vamos construir juntos o próximo nível do atendimento Flex Fitness?
