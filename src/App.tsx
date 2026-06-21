@@ -446,44 +446,83 @@ export default function App() {
           </div>
 
           {/* Filters & Dynamic Category Tabs */}
-          <div className="mb-10">
-            <div className="flex justify-center bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
-              
-              {/* Filter Tabs matching the columns */}
-              <div className="flex flex-wrap sm:flex-nowrap justify-center gap-2.5 w-full">
-                <button
-                  onClick={() => setActiveCategory('all')}
-                  className={`flex-grow sm:flex-grow-0 px-5 py-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
-                    activeCategory === 'all' 
-                      ? 'bg-[#170d66] text-white shadow-lg shadow-indigo-950/20 scale-105' 
-                      : 'bg-slate-100 text-slate-800 hover:bg-slate-200 border border-slate-200'
-                  }`}
-                >
-                  Plano completo (12 módulos)
-                </button>
-                <button
-                  onClick={() => setActiveCategory('trilha1')}
-                  className={`flex-grow sm:flex-grow-0 px-5 py-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
-                    activeCategory === 'trilha1' 
-                      ? 'bg-[#170d66] text-white shadow-lg shadow-indigo-950/20 scale-105' 
-                      : 'bg-slate-100 text-slate-800 hover:bg-slate-200 border border-slate-200'
-                  }`}
-                >
-                  Grupo 1: Técnico (6 módulos)
-                </button>
-                <button
-                  onClick={() => setActiveCategory('trilha2')}
-                  className={`flex-grow sm:flex-grow-0 px-5 py-3 rounded-full text-xs font-mono font-bold uppercase tracking-wider transition-all cursor-pointer whitespace-nowrap ${
-                    activeCategory === 'trilha2' 
-                      ? 'bg-[#ed3024] text-white shadow-lg shadow-red-650/20 scale-105' 
-                      : 'bg-slate-100 text-slate-800 hover:bg-slate-200 border border-slate-200'
-                  }`}
-                >
-                  Grupo 2: Retenção (6 módulos)
-                </button>
-              </div>
-            </div>
-          </div>
+<div className="mb-14">
+  <div className="grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-4xl mx-auto">
+
+    {/* Botão 1 */}
+    <button
+      onClick={() => setActiveCategory('all')}
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+        activeCategory === 'all'
+          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
+          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+      }`}
+    >
+      {activeCategory === 'all' && (
+        <>
+          <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+        </>
+      )}
+
+      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
+        activeCategory === 'all' ? 'text-[#170d66]' : 'text-slate-700'
+      }`}>
+        Plano Completo
+      </span>
+    </button>
+
+    {/* Botão 2 */}
+    <button
+      onClick={() => setActiveCategory('trilha1')}
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+        activeCategory === 'trilha1'
+          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
+          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+      }`}
+    >
+      {activeCategory === 'trilha1' && (
+        <>
+          <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+        </>
+      )}
+
+      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
+        activeCategory === 'trilha1' ? 'text-[#170d66]' : 'text-slate-700'
+      }`}>
+        Técnico<br className="hidden sm:block" /> 6 módulos
+      </span>
+    </button>
+
+    {/* Botão 3 */}
+    <button
+      onClick={() => setActiveCategory('trilha2')}
+      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl border transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+        activeCategory === 'trilha2'
+          ? 'bg-white border-[#170d66] shadow-xl shadow-indigo-950/15 scale-[1.02]'
+          : 'bg-white border-slate-200 shadow-sm hover:border-slate-300'
+      }`}
+    >
+      {activeCategory === 'trilha2' && (
+        <>
+          <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[10px] border-r-[10px] border-t-[12px] border-l-transparent border-r-transparent border-t-[#170d66]" />
+        </>
+      )}
+
+      <span className={`font-display font-black uppercase leading-tight text-[11px] sm:text-sm tracking-wide ${
+        activeCategory === 'trilha2' ? 'text-[#170d66]' : 'text-slate-700'
+      }`}>
+        Retenção<br className="hidden sm:block" /> 6 módulos
+      </span>
+    </button>
+
+  </div>
+</div>
+
+
+
 
           {/* Modules Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
