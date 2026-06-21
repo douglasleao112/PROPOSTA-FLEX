@@ -182,7 +182,7 @@ export default function TrainingGallery() {
           <div className="flex justify-between items-center w-full min-h-[30px] p-4 md:p-6" />
 
           {/* Middle segment: Floating directional arrows (Seta manual com backdrop blur) */}
-          <div className="flex justify-between items-center w-full pointer-events-auto px-4 sm:px-6">
+          <div className="flex justify-between items-center w-full pointer-events-auto px-4 sm:px-6 translate-y-8">
             <button
               onClick={handlePrev}
               className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-slate-950/70 backdrop-blur-sm border border-white/10 text-white flex items-center justify-center hover:bg-[#ed3024] hover:border-transparent hover:scale-105 active:scale-95 transition-all shadow-xl"
