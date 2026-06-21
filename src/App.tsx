@@ -122,7 +122,7 @@ export default function App() {
             </div>
           </div>
 
-          <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-wider text-gray-300 uppercase">
+         <nav className="hidden">
             <button onClick={() => scrollTo('impact-section')} className="hover:text-flex-red transition-colors duration-200">Impacto</button>
             <button onClick={() => scrollTo('about-section')} className="hover:text-flex-red transition-colors duration-200">Módulos</button>
             <button onClick={() => scrollTo('methodology-section')} className="hover:text-flex-red transition-colors duration-200">Condução</button>
@@ -382,7 +382,7 @@ export default function App() {
                     <AnimatedCounter target={6} />
                   </div>
                   <div className="text-[10px] md:text-xs font-mono text-slate-600 uppercase tracking-wider font-bold leading-tight">
-                    Sessões Biomecânicas
+                    Módulos de Biomecânica
                   </div>
                 </div>
 
@@ -392,7 +392,7 @@ export default function App() {
                     <AnimatedCounter target={6} />
                   </div>
                   <div className="text-[10px] md:text-xs font-mono text-slate-600 uppercase tracking-wider font-bold leading-tight">
-                    RELAÇÃO & RETENÇÃO
+                    Módulos de RELAÇÃO & RETENÇÃO
                   </div>
                 </div>
 

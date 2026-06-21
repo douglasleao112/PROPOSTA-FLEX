@@ -189,10 +189,10 @@ export const TRAINING_IMAGES: TrainingImage[] = [
 
 export const AUTHORITIES: AuthorityBadge[] = [
   { title: "Doutor e pesquisador pela UCB", sub: "" },
-  { title: "Nutricionista esportivo pelo Colégio Americano", sub: "" },
-  { title: "Especialista em treinamento personalizado", sub: "" },
+  { title: "Nutricionista esportivo pelo Colégio Americano de Medicina do Esporte", sub: "" },
+  { title: "Especialista em treinamento personalizado e Fisiculturistas", sub: "" },
   { title: "Docente de ensino superior e pós graduação", sub: "" },
-  { title: "Revisor da Revista Brasileiro Ciência e Movimento", sub: "" },
+  { title: "Revisor da Revista Brasileira de Ciência do Movimento", sub: "" },
   { title: "Consultor Empresarial para Academias", sub: "" }
 ];
 
