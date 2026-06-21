@@ -200,22 +200,22 @@ export const METHODOLOGY_STEPS = [
   {
     step: "01",
     title: "Conceito aplicado",
-    description: "Explicação objetiva da base científica de biomecânica e comportamento, focando em aplicações imediatas praticáveis sem jargões confusos."
+    description: "Explicação objetiva da base científica de biomecânica e comportamento, focando na prática."
   },
   {
     step: "02",
     title: "Demonstração prática",
-    description: "Aplicação ao vivo no ambiente real da musculação, demonstrando ajustes finos, posicionamentos de pés/mãos e eixos de torque em equipamentos Flex."
+    description: "Aplicação demonstrando ajustes finos, posicionamentos de pés/mãos e eixos de torque em equipamentos."
   },
   {
     step: "03",
     title: "Correção em contexto de sala",
-    description: "Simulação de situações de sala com os próprios professores atuando como alunos. Treino direto de abordagens verbais e toque clínico com segurança."
+    description: "Simulação direta de abordagens de sala com os próprios professores atuando como alunos."
   },
   {
     step: "04",
     title: "Transferência para o atendimento",
-    description: "Como vincular a correção ao relacionamento de fixação (retenção). Criação de valor tangível na mente do aluno visando eliminar a evasão escolar acadêmica."
+    description: "Correção estratégica para aumentar retenção e reduzir evasão acadêmica."
   }
 ];
 
