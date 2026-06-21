@@ -558,12 +558,12 @@ export default function App() {
       {/* 12. SEÇÃO CONSTRUIR JUNTOS O PRÓXIMO NÍVEL (FLEX ATENDIMENTO) */}
       <section className="py-24 bg-white text-slate-950 bg-grid-pattern-dark relative border-y border-slate-200 flex flex-col justify-center items-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8 relative z-10">
-          <img 
-            src="https://i.ibb.co/S8XddB6/flex-para-fundo-escuro.png" 
-            alt="Flex Fitness" 
-            referrerPolicy="no-referrer"
-            className="h-14 sm:h-16 object-contain mx-auto select-none filter-flex-blue"
-          />
+         <img 
+  src="https://i.ibb.co/Fbv9kqmn/flex-para-fundo-claro.png" 
+  alt="Flex Fitness" 
+  referrerPolicy="no-referrer"
+  className="h-14 sm:h-16 object-contain mx-auto select-none"
+/>
           
           <h2 className="font-display font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#170d66] leading-tight uppercase tracking-tight max-w-3xl mx-auto">
             Vamos construir juntos o próximo nível do atendimento Flex Fitness?
