@@ -585,7 +585,7 @@ export default function App() {
           </div>
 
           <p className="text-center text-xs text-slate-700 font-mono font-bold mt-10 select-none">
-            * Os módulos do Ciclo de Conhecimento são ministrados 100% de forma prática nas salas de musculação da Flex Fitness.
+            * Os módulos são ministrados 100% de forma prática nas salas de musculação da Flex Fitness.
           </p>
 
         </div>
