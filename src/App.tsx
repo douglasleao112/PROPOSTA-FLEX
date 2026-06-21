@@ -463,7 +463,7 @@ export default function App() {
     {/* Botão 1 - Plano Completo */}
     <button
       onClick={() => setActiveCategory('all')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative isolate h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'all'
           ? 'bg-white shadow-xl shadow-indigo-950/15 scale-[1.02]'
           : 'bg-white shadow-sm hover:shadow-md'
@@ -475,8 +475,8 @@ export default function App() {
           <span className="absolute top-0 left-0 w-full h-2 rounded-t-2xl bg-[linear-gradient(to_right,#170d66_0%,#170d66_50%,#ed3024_50%,#ed3024_100%)]" />
 
           {/* Triângulo branco */}
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
-        </>
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white -z-10" />
+          </>
       )}
 
 <span className="flex flex-col items-center justify-center leading-tight">
@@ -497,7 +497,7 @@ export default function App() {
     {/* Botão 2 - Técnico */}
     <button
       onClick={() => setActiveCategory('trilha1')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative isolate h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'trilha1'
           ? 'bg-white shadow-xl shadow-indigo-950/15 scale-[1.02]'
           : 'bg-white shadow-sm hover:shadow-md'
@@ -509,8 +509,8 @@ export default function App() {
           <span className="absolute top-0 left-0 w-full h-2 bg-[#170d66] rounded-t-2xl" />
 
           {/* Triângulo branco */}
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
-        </>
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white -z-10" />
+          </>
       )}
 
 <span className="flex flex-col items-center justify-center leading-tight">
@@ -531,7 +531,7 @@ export default function App() {
     {/* Botão 3 - Retenção */}
     <button
       onClick={() => setActiveCategory('trilha2')}
-      className={`relative h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
+      className={`relative isolate h-20 sm:h-24 px-2 sm:px-5 rounded-2xl transition-all duration-300 cursor-pointer overflow-visible flex items-center justify-center text-center ${
         activeCategory === 'trilha2'
           ? 'bg-white shadow-xl shadow-red-950/10 scale-[1.02]'
           : 'bg-white shadow-sm hover:shadow-md'
@@ -543,8 +543,8 @@ export default function App() {
           <span className="absolute top-0 left-0 w-full h-2 bg-[#ed3024] rounded-t-2xl" />
 
           {/* Triângulo branco */}
-          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white drop-shadow-md" />
-        </>
+          <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-r-[12px] border-t-[14px] border-l-transparent border-r-transparent border-t-white -z-10" />
+          </>
       )}
 
 <span className="flex flex-col items-center justify-center leading-tight">
